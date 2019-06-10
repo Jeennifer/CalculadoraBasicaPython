@@ -1,0 +1,34 @@
+print("CALCULADORA EN Python")
+while True:
+    print("Opciones")
+    print("Ingresa 'suma' para sumar")
+    print("Ingresa 'resta' para restar")
+    print("Ingresa 'multiplicacion' para multiplicar")
+    print("Ingresa 'division' para dividir")
+    print("Ingresa 'salir' para terminar el programa")
+    leer_opcion = input(": ")
+    
+    if leer_opcion == "salir":
+        break
+    elif leer_opcion == "suma":
+        num1 = float(input("Ingresa un número: "))
+        num2 = float(input("Ingresa un segundo número: "))
+        resultado = str(num1 + num2)
+        print("El resultado es: " + resultado)
+    elif leer_opcion == "resta":
+        num1 = float(input("Ingresa un número: "))
+        num2 = float(input("Ingresa un segundo número: "))
+        resultado = str(num1 - num2)
+        print("El resultado es: " + resultado)
+    elif leer_opcion == "multiplicacion":
+        num1 = float(input("Ingresa un número: "))
+        num2 = float(input("Ingresa un segundo número: "))
+        resultado = str(num1 * num2)
+        print("El resultado es: " + resultado)
+    elif leer_opcion == "division":
+        num1 = float(input("Ingresa un número: "))
+        num2 = float(input("Ingresa un segundo número: "))
+        resultado = str(num1 / num2)
+        print("El resultado es: " + resultado)
+    else:
+        print("Selecciona una opción de las anteriores")
